@@ -125,6 +125,12 @@
 		    brewery_loc = data;
 	    	});
 
+	    d3.csv("deaths_age_sex.csv", function(data){
+		    deaths = data;
+		    console.log(deaths);
+		    
+	    	});
+
 	    	function drawMap() 
 		{			
 						
@@ -222,11 +228,7 @@
 			  .attr("cy", function (d){ return yScale(d.y); });
 		}
 		
-		d3.csv("deaths_age_sex.csv", function(data){
-		    deaths = data;
-		    console.log(deaths);
-		    
-	    	});
+		
 
 		function drawDeaths(data)
 		{
