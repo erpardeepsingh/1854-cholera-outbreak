@@ -110,6 +110,12 @@
 		    drawMap();
 	    });
 
+	    d3.csv("pumps.csv", function(data){
+		    pumps_loc = data;
+		    console.log(pumps_loc);
+		    	
+	    });
+
 	    	function drawMap() 
 		{			
 						
@@ -186,12 +192,7 @@
 			drawBrewery(brewery_loc)	    
 		}
 		
-		d3.csv("pumps.csv", function(data){
-		    pumps_loc = data;
-		    console.log(pumps_loc);
-		    	
-	    });
-
+		
 		function drawPumps(data)
 		{
 			var xScale = d3.scale.linear();
