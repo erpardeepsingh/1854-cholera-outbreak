@@ -115,6 +115,11 @@
 		    console.log(pumps_loc);
 		    	
 	    });
+	    
+	    d3.csv("workhouse.csv", function(data){
+		    workhouse_loc = data;
+		    
+	    	});
 
 	    	function drawMap() 
 		{			
@@ -252,10 +257,7 @@
     			return "<strong>Age:</strong> <span style='color:red'>" + d.age_real + "</span>";
   		})
 		
-		d3.csv("workhouse.csv", function(data){
-		    workhouse_loc = data;
-		    
-	    	});
+		
 
 		function drawWorkhouse(data)
 		{
