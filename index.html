@@ -121,6 +121,10 @@
 		    
 	    	});
 
+	    d3.csv("brewery.csv", function(data){
+		    brewery_loc = data;
+	    	});
+
 	    	function drawMap() 
 		{			
 						
@@ -282,10 +286,7 @@
 			circles.exit().remove();
 		}
 
-		d3.csv("brewery.csv", function(data){
-		    brewery_loc = data;
-	    	});
-
+		
 		function drawBrewery(data)
 		{
 			
