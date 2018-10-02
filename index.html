@@ -131,10 +131,10 @@
 	    d3.json("data/streets.json",function(data) {
 		    streets=data;
 		    console.log(streets);
-		    drawMap();
+		    drawMap(deaths);
 	    });
 
-	    	function drawMap() 
+	    	function drawMap(deaths) 
 		{			
 						
 			var g = d3.select("body")				
