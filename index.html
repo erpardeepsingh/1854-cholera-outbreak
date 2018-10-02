@@ -142,7 +142,7 @@
 			var g = d3.select("body")				
 			  .append("svg")
 			  .attr("id","main")
-			  .attr("width", "650")
+			  .attr("width", "550")
                           .attr("height", "700")
 			  
      			  .call(d3.behavior.zoom().on("zoom", function () {
@@ -150,7 +150,7 @@
       			  }))
       			  .append("g")
 			  
-			  .attr("transform","translate(30,150) ");
+			  .attr("transform","translate(-50,150) ");
 
 			var xScale = d3.scale.linear();
 			var yScale = d3.scale.linear();
@@ -464,7 +464,7 @@
 
 			var xScale = d3.scale.ordinal();
 			var yScale = d3.scale.linear();
-			xScale.domain(data.map(function(d) { return d.date; })).rangeRoundBands([0, 570], 0.1);
+			xScale.domain(data.map(function(d) { return d.date; })).rangeRoundBands([0, 520], 0.1);
 			
 			yScale.domain([0,15]).range( [0,50]);			
 
