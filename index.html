@@ -111,28 +111,30 @@
 		    pumps_loc = data;
 		    console.log(pumps_loc);
 		    	
-	    });
-	    
-	    d3.csv("workhouse.csv", function(data){
+		d3.csv("workhouse.csv", function(data){
 		    workhouse_loc = data;
-		    
-	    	});
-
-	    d3.csv("brewery.csv", function(data){
+		   d3.csv("brewery.csv", function(data){
 		    brewery_loc = data;
-	    	});
-
-	    d3.csv("deaths_age_sex.csv", function(data){
+			d3.csv("deaths_age_sex.csv", function(data){
 		    deaths = data;
 		    console.log(deaths);
-		    
-	    	});
-
-	    d3.json("data/streets.json",function(data) {
+		    	d3.json("data/streets.json",function(data) {
 		    streets=data;
 		    console.log(streets);
 		    drawMap(deaths);
 	    });
+	    	});
+	    	});			    
+	    	});
+	    });
+	    
+	    
+
+	    
+
+	    
+
+	    
 
 	    	function drawMap(deaths) 
 		{			
